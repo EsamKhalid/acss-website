@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import { Children } from "react";
 
-import ProjectTile from "./ProjectTile";
+import EventTile from "./EventTile";
 
 import placeholder from "../../Images/placeholder.avif";
 
@@ -31,11 +31,11 @@ export default function SortableGrid({ children }: SortableGridProps) {
     let newOutList: React.ReactNode[] = [];
     for (let i = 0; i < DateList.length; i++) {
       React.Children.map(children, (child) => {
-        if (React.isValidElement(child) && child.type === ProjectTile) {
+        if (React.isValidElement(child) && child.type === EventTile) {
           var childOut = (
             <Link
               key={child.key}
-              href={`../ProjectsPage/${child.props.ProjectTitle.replace(
+              href={`../EventsPage/${child.props.EventTitle.replace(
                 /\s/g,
                 ""
               )}`}
@@ -65,9 +65,9 @@ export default function SortableGrid({ children }: SortableGridProps) {
   function sortDates() {
     //resets the date list
     SetDateList([]);
-    //populates the DateList array with the start dates of the projects
+    //populates the DateList array with the start dates of the Events
     React.Children.map(children, (child) => {
-      if (React.isValidElement(child) && child.type === ProjectTile) {
+      if (React.isValidElement(child) && child.type === EventTile) {
         DateList.push(child.props.EndDate.getTime());
       }
     });
@@ -90,7 +90,7 @@ export default function SortableGrid({ children }: SortableGridProps) {
 
   return (
     <>
-      <div className="w-screen mx-[200px]">
+      <div className="w-screen ">
         <select
           onChange={handleSelect}
           className="text-black bg-white w-full border border-cybpnk-brdr rounded outline-cybpnk-brdr h-9 mb-5"

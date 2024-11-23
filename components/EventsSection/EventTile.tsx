@@ -6,21 +6,21 @@ import DiagonalLines from "../Shapes/DiagonalLines";
 import CornerBorder from "../Borders/CornerBorder";
 import { motion } from "framer-motion";
 
-interface ProjectTileProps {
-  ProjectTitle: string;
-  ProjectType: string;
+interface EventTileProps {
+  EventTitle: string;
+  EventType: string;
   EndDate: Date;
   ImageSource: StaticImageData;
   className: string;
 }
 
-export default function ProjectTile({
-  ProjectTitle,
-  ProjectType,
+export default function EventTile({
+  EventTitle,
+  EventType,
   EndDate,
   ImageSource,
   className,
-}: ProjectTileProps) {
+}: EventTileProps) {
   const [isHovered, setHovered] = useState(false);
   return (
     <>
@@ -41,7 +41,7 @@ export default function ProjectTile({
             className="flex flex-col justify-between border border-cybpnk-brdr rounded w-full p-2 [&_*]:p-1 md:[&_*]:p-2
         min-h-full min-w-fit"
           >
-            <h1 className="text-4xl">{"// " + ProjectTitle}</h1>
+            <h1 className="text-4xl">{"// " + EventTitle}</h1>
             <Image
               fill={false}
               className=" sm:h-[200px] md:min-w-[250px]  md:min-h-[250px] w-full"
@@ -50,7 +50,7 @@ export default function ProjectTile({
             />
             <h2 className="text-lg">
               <span className="text-lg m-[-5px]">//Type:</span> <br />
-              {ProjectType}
+              {EventType}
             </h2>
             <h2 className="text-lg">
               <span className="text-lg m-[-8px]">//Completed: </span> <br />
