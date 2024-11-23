@@ -4,8 +4,6 @@ import React, { ReactNode, useEffect, useState } from "react";
 
 import Link from "next/link";
 
-import Select from "react-select";
-
 import { Children } from "react";
 
 import ProjectTile from "./ProjectTile";
@@ -92,10 +90,10 @@ export default function SortableGrid({ children }: SortableGridProps) {
 
   return (
     <>
-      <div>
+      <div className="w-screen mx-[200px]">
         <select
           onChange={handleSelect}
-          className="text-white bg-black w-full border border-cybpnk-brdr rounded outline-cybpnk-brdr h-9 mb-5"
+          className="text-black bg-white w-full border border-cybpnk-brdr rounded outline-cybpnk-brdr h-9 mb-5"
         >
           <option value="DateDescending">Date Descending</option>
           <option value="DateAscending">Date Ascending</option>

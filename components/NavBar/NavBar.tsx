@@ -76,7 +76,7 @@ function NavBar() {
           <ul className="text-center list-none inline-flex">
             <PageLink text="About Us" link="/AboutPage" />
             <PageLink text="Events" link="/ProjectsPage" />
-            <PageLink text="Projects" link="/ProjectsPage" />
+            <PageLink text="Meet the Committee" link="/ProjectsPage" />
           </ul>
           <div className="NavLogoContainer sm:flex justify-between">
             <Link
