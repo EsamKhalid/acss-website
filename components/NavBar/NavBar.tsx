@@ -44,10 +44,10 @@ function NavBar() {
         <nav className="navbar flex justify-between items-center px-[2vw]  pt-[10px] w-screen">
           <Link
             href="../"
-            className="hover:bg-jms-blue hover:text-white rounded scale-[.85] p-[5px] "
+            className="hover:bg-jms-blue hover:text-white rounded scale-[.85] p-[5px] duration-200"
           >
             <CornerBorder
-              className=""
+              className="hover:outline-white"
               cornerSize="9px"
               borderThickness="2px"
               borderGap="3px"
@@ -71,7 +71,7 @@ function NavBar() {
               <FaLinkedin className="NavLogo" />
             </Link>
             <Link target="_blank" href="https://github.com/EsamKhalid">
-              <FaGithub className="NavLogo" />
+              <FaInstagram className="NavLogo" />
             </Link>
           </div>
         </nav>
