@@ -17,21 +17,6 @@ import useMeasure from "react-use-measure";
 import { animate, motion, useMotionValue } from "framer-motion";
 import { useEffect, useState } from "react";
 
-/*
-function NavBar() {
-  return (
-    <>
-      <div className="border border-white border-x-0 border-y-2 py-3">
-        <h1 className="font-Blender-Pro-Book text-white text-nowrap text-4xl">
-          Esam Khalid
-        </h1>
-        <nav></nav>
-      </div>
-    </>
-  );
-}
-*/
-
 function NavBar() {
   let [ref, { width }] = useMeasure();
 
@@ -75,8 +60,8 @@ function NavBar() {
 
           <ul className="text-center list-none inline-flex">
             <PageLink text="About Us" link="/AboutPage" />
-            <PageLink text="Events" link="/ProjectsPage" />
-            <PageLink text="Meet the Committee" link="/ProjectsPage" />
+            <PageLink text="Events" link="/Events" />
+            <PageLink text="Meet the Committee" link="/Committee" />
           </ul>
           <div className="NavLogoContainer sm:flex justify-between">
             <Link
