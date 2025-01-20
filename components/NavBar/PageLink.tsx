@@ -13,17 +13,17 @@ export default function PageLink({ text, link }: props) {
   return (
     <>
       <motion.div
-        className="px-2 sm:mx-5 md:mx-5 size-fit p-2 h-auto"
+        className="px-2 sm:mx-5 md:mx-5 size-fit p-2 h-auto hover:bg-jms-blue hover:text-white rounded"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         animate={{
-          y: isHovered ? -12 : 0,
+          y: isHovered ? -7.5 : 0,
           scale: isHovered ? 1.1 : 1,
           transition: { duration: 0.2 },
         }}
       >
         <CornerBorder
-          className="size-full"
+          className="size-full hover:outline-white"
           cornerSize="9px"
           borderThickness="2px"
           borderGap="3px"
