@@ -33,7 +33,7 @@ export default function PageLink({ text, link }: props) {
             style={{ alignItems: "center" }}
           >
             <Link href={link}>
-              <li className="text-2xl">{text}</li>
+              <li className="text-xl md:text-2xl lg:text-4xl border">{text}</li>
             </Link>
           </div>
         </CornerBorder>

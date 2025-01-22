@@ -38,8 +38,12 @@
   }
 }
 
-* {
+/* * {
   @apply font-jetbrains-mono;
+} */
+
+* {
+  @apply font-Blender-Pro-Book;
 }
 
 :root {
