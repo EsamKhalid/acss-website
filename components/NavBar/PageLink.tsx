@@ -17,8 +17,8 @@ export default function PageLink({ text, link }: props) {
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         animate={{
-          y: isHovered ? -7.5 : 0,
-          scale: isHovered ? 1.1 : 1,
+          y: isHovered ? -0 : 0,
+          scale: isHovered ? 1.02 : 1,
           transition: { duration: 0.2 },
         }}
       >

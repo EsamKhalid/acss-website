@@ -12,6 +12,7 @@ import { FaFontAwesomeLogoFull, FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
+import { FaDiscord } from "react-icons/fa";
 
 import useMeasure from "react-use-measure";
 import { animate, motion, useMotionValue } from "framer-motion";
@@ -72,6 +73,9 @@ function NavBar() {
             </Link>
             <Link target="_blank" href="https://github.com/EsamKhalid">
               <FaInstagram className="NavLogo" />
+            </Link>
+            <Link target="_blank" href="https://discord.gg/yseNncdr">
+              <FaDiscord className="NavLogo" />
             </Link>
           </div>
         </nav>
