@@ -27,8 +27,19 @@
   src: url(../fonts/BlenderPro-Thin.ttf);
 }
 
+@font-face {
+  font-family: jetbrains-mono;
+  src: url(../fonts/JetBrainsMono-Regular.ttf);
+}
+
+@layer utilities {
+  .font-jetbrains-mono {
+    font-family: "jetbrains-mono";
+  }
+}
+
 * {
-  @apply font-Blender-Pro-Book;
+  @apply font-jetbrains-mono;
 }
 
 :root {
@@ -66,7 +77,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  @apply bg-white text-black;
+  @apply bg-red-300 text-black;
 }
 
 @layer utilities {
@@ -88,7 +99,7 @@ body {
   } */
 
   .NavLogoContainer a {
-    @apply m-[5px] flex items-center justify-center hover:border-corners-sm
+    @apply m-[5px] hover:bg-jms-blue flex items-center justify-center hover:border-corners-sm
     cursor-pointer duration-200
     size-[30px]
     sm:size-[50px];
