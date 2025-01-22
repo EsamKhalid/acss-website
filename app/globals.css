@@ -77,7 +77,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  @apply bg-red-300 text-black;
+  @apply bg-white text-black;
 }
 
 @layer utilities {
@@ -99,14 +99,14 @@ body {
   } */
 
   .NavLogoContainer a {
-    @apply m-[5px] hover:bg-jms-blue flex items-center justify-center hover:border-corners-sm
+    @apply m-[5px]  flex items-center justify-center 
     cursor-pointer duration-200
     size-[30px]
     sm:size-[50px];
   }
 
   .NavLogoContainer a > * {
-    @apply size-[25px] sm:size-[35px];
+    @apply size-[25px] sm:size-[50px] hover:bg-jms-blue hover:text-white rounded scale-[.85] p-[5px] duration-200;
   }
 
   .border-corners-lg {
