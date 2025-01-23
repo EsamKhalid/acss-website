@@ -48,7 +48,7 @@ function NavBar() {
             className="hover:bg-jms-blue hover:text-white rounded scale-[.85] p-[5px] duration-200"
           >
             <CornerBorder
-              className="hover:outline-white"
+              className="hover:outline-white outline-black"
               cornerSize="9px"
               borderThickness="2px"
               borderGap="3px"
@@ -64,7 +64,7 @@ function NavBar() {
             <PageLink text="Events" link="/Events" />
             <PageLink text="Meet the Committee" link="/Committee" />
           </ul>
-          <div className="NavLogoContainer sm:flex justify-between">
+          <div className="NavLogoContainer sm:flex justify-between hidden ">
             <Link
               target="_blank"
               href="https://www.linkedin.com/in/esam-khalid-49648728b/"

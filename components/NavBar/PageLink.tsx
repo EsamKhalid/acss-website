@@ -23,7 +23,7 @@ export default function PageLink({ text, link }: props) {
         }}
       >
         <CornerBorder
-          className="size-full hover:outline-white"
+          className="size-full hover:outline-white outline-black"
           cornerSize="9px"
           borderThickness="2px"
           borderGap="3px"
@@ -33,7 +33,7 @@ export default function PageLink({ text, link }: props) {
             style={{ alignItems: "center" }}
           >
             <Link href={link}>
-              <li className="text-xl md:text-2xl lg:text-4xl border">{text}</li>
+              <li className="text-xl md:text-2xl lg:text-4xl">{text}</li>
             </Link>
           </div>
         </CornerBorder>
