@@ -14,6 +14,8 @@ import { FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { FaDiscord } from "react-icons/fa";
 
+import AcssLogo from "@/images/AcssLogo.png";
+
 import useMeasure from "react-use-measure";
 import { animate, motion, useMotionValue } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -48,14 +50,19 @@ function NavBar() {
             className="hover:bg-jms-blue hover:text-white rounded scale-[.85] p-[5px] duration-200"
           >
             <CornerBorder
-              className="hover:outline-white outline-black"
+              className="hover:outline-black outline-white mb-[15px] [&_*]:hover:"
               cornerSize="9px"
               borderThickness="2px"
               borderGap="3px"
             >
-              <div className="inline-block sm:flex justify-center">
-                <h1 className="text-xl sm:text-5xl">ACSS</h1>
-              </div>
+              <CornerBorder
+                className=" outline-black"
+                cornerSize="9px"
+                borderThickness="2px"
+                borderGap="3px"
+              >
+                <Image src={AcssLogo} alt="AcssLogo" className="h-fit"></Image>
+              </CornerBorder>
             </CornerBorder>
           </Link>
 
