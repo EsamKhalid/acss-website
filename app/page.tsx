@@ -6,6 +6,8 @@ import NavBar from "@/components/NavBar/NavBar";
 import EventTile from "@/components/EventsSection/EventTile";
 import SortableGrid from "@/components/EventsSection/SortableGrid";
 
+import DisplayGrid from "@/components/Grids/DisplayGrid";
+
 import placeholder from "@/images/placeholder.avif";
 import mascot from "@/images/mascotimg.jpg";
 
@@ -68,10 +70,10 @@ export default function Page() {
           world of technology with us. The ACSS hosts two events a week, one
           technical/professional and one social.
         </p>
-        <p className="text-2xl text-justify mx-5 my-3"></p>
+        <p className="text-2xl text-justify mx-5 my-3">Recent Events</p>
 
         <div className="flex justify-center">
-          <SortableGrid>{tilesList}</SortableGrid>
+          <DisplayGrid>{tilesList}</DisplayGrid>
         </div>
       </div>
     </>
