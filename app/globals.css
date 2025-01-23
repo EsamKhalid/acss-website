@@ -103,7 +103,7 @@ body {
   } */
 
   .NavLogoContainer a {
-    @apply m-[5px]  flex items-center justify-center 
+    @apply m-[5px]  inline-flex items-center justify-center 
     cursor-pointer duration-200
     size-[30px]
     sm:size-[50px];

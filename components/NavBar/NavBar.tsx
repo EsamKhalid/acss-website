@@ -14,6 +14,8 @@ import { FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { FaDiscord } from "react-icons/fa";
 
+import NavLogoContainer from "./NavLogoContainer";
+
 import AcssLogo from "@/images/AcssLogo.png";
 
 import useMeasure from "react-use-measure";
@@ -50,19 +52,16 @@ function NavBar() {
             className="hover:bg-jms-blue hover:text-white rounded scale-[.85] p-[5px] duration-200"
           >
             <CornerBorder
-              className="hover:outline-black outline-white mb-[15px] [&_*]:hover:"
-              cornerSize="9px"
-              borderThickness="2px"
+              className=" outline-black hidden "
+              cornerSize="11px"
+              borderThickness="2.5px"
               borderGap="3px"
             >
-              <CornerBorder
-                className=" outline-black"
-                cornerSize="9px"
-                borderThickness="2px"
-                borderGap="3px"
-              >
-                <Image src={AcssLogo} alt="AcssLogo" className="h-fit"></Image>
-              </CornerBorder>
+              <Image
+                src={AcssLogo}
+                alt="AcssLogo"
+                className="max-h-[100px] max-w-[250px]"
+              ></Image>
             </CornerBorder>
           </Link>
 
@@ -71,20 +70,7 @@ function NavBar() {
             <PageLink text="Events" link="/Events" />
             <PageLink text="Meet the Committee" link="/Committee" />
           </ul>
-          <div className="NavLogoContainer sm:flex justify-between hidden ">
-            <Link
-              target="_blank"
-              href="https://www.linkedin.com/in/esam-khalid-49648728b/"
-            >
-              <FaLinkedin className="NavLogo" />
-            </Link>
-            <Link target="_blank" href="https://github.com/EsamKhalid">
-              <FaInstagram className="NavLogo" />
-            </Link>
-            <Link target="_blank" href="https://discord.gg/yseNncdr">
-              <FaDiscord className="NavLogo" />
-            </Link>
-          </div>
+          <NavLogoContainer />
         </nav>
         <motion.div
           className="flex w-max"
